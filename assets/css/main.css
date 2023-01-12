@@ -1,0 +1,209 @@
+body, html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+/* BUTTONS */
+.secondary-button {
+    padding: 20px 40px 20px 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #36807f;
+    border-radius: 50px;
+    background-color: transparent;
+    background-position: 80% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    -webkit-transition: color 300ms ease, background-color 300ms ease;
+    transition: color 300ms ease, background-color 300ms ease;
+    font-family: Poppins, sans-serif;
+    color: #36807f;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.secondary-button:hover {
+    background-color: #36807f;
+    background-position: 80% 50%, 80% 50%;
+    background-size: auto, auto;
+    background-repeat: no-repeat, no-repeat;
+    color: #eef4f8;
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 20px 40px 20px 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e61f57;
+    border-radius: 50px;
+    background-color: #e61f57;
+    background-position: 88% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    box-shadow: 0 5px 30px 0 rgba(230, 31, 87, 0.3);
+    -webkit-transition: color 300ms ease, background-color 300ms ease;
+    transition: color 300ms ease, background-color 300ms ease;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: none;
+}
+
+.primary-button:hover {
+    background-color: #fff;
+    background-position: 88% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    opacity: 1;
+    color: #e61f57;
+}
+
+/* END BUTTONS */
+
+.tm-h-section {
+    min-height: 90vh;
+    background-image: linear-gradient(180deg, rgba(22, 48, 47, 0.2), rgba(22, 48, 47, 0.2)), url("../img/bg-telemed-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-span-pink {
+    background-image: url('../dec//dec1.png');
+    background-position: 50% 82%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tm-title {
+    color: white;
+    font-size: 76px;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+.tm-section-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 46px;
+    line-height: 1.3em;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.tm-step-title {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+.tm-step-image {
+    height: 70px;
+}
+
+.color-main {
+    color: #223645;
+}
+
+.color-text-fade {
+    color: #707070;
+}
+
+.tm-text {
+    font-size: 16px;
+}
+
+.pre-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #36807f;
+    font-size: 16px;
+    line-height: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.p-105 {
+    padding-top: 105px;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 59%;
+    height: 560px;
+}
+
+.img-care-behind {
+    position: absolute;
+    right: -10vw;
+    z-index: 1;
+    width: 470px;
+    height: auto;
+    margin-top: 0px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  
+}
+
+.img-care-first {
+    position: absolute;
+    left: 100px;
+    bottom: -60px;
+    z-index: 2;
+    width: 312px;
+    height: auto;
+    margin-top: 0px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.img-care-details {
+    position: absolute;
+    right: -3vw;
+    bottom: 0px;
+    z-index: 3;
+    width: 120px;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.color-primary {
+    color: #36807f;
+}
+
+.card {
+    border: none!important;
+}
+
+.left-border {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bottom-border {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.get-report {
+    color: #36807f;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
