@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,7 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <title>Hello, world!</title>
+    <!-- SLICK CAROUSEL -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <title>TeleMedCare</title>
 
 
   </head>
@@ -21,7 +24,17 @@
     <!-- NAVBAR START -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand me-auto" href="#">
+                <img src="assets/img/logo-telemed.png" alt="" class="logo-container">
+            </a>
+            <select class="form-select d-md-none d-block" aria-label="Default select example" stlye="width:100px; height: 50px;">
+                <option value="EN" selected>
+                    EN
+                </option>
+                <option value="ES">
+                    ES
+                </option>
+              </select>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,24 +44,24 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link" href="#">Solutions</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
                 </li>
             </ul>
             <form class="d-flex">
+                <select class="form-select d-md-block d-none" aria-label="Default select example" stlye="width:100px; height: 50px;">
+                    <option value="EN" selected>
+                        EN
+                    </option>
+                    <option value="ES">
+                        ES
+                    </option>
+                  </select>
                 <button class="secondary-button" type="submit">
                     Get in touch
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -67,7 +80,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-md-10 col-12 text-center">
                     <h1 class="tm-title">Advanced <span class="text-span-pink">Remote</span> Patient Monitoring Technology</h1>
-                    <p class="tm-text text-white mt-4 mb-5">Good health is a state of mental, physical and social well being and it does not just mean the absence of disease! Enter a new era in healthcare with <strong>TeleMedCare</strong></p>
+                    <p class="tm-text text-white mt-4 mb-5">Good health is a state of mental, physical and social well being and it does not just mean the absence of disease! Enter a new era in healthcare with TeleMedCare</p>
                     <button class="primary-button" type="submit">
                         Get in touch
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -80,30 +93,31 @@
     </section>
     <!-- HEADER END -->
 
+    <img src="assets/dec/leftdeco.png" class="tm-left-deco" alt="">
     <!-- STEPS SECTION START-->
     <section class="tm-step-section p-105">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
-                    <h3 class="pre-title">Advanced RPM Technology</h3>
-                    <h2 class="tm-section-title color-main">Helping you get better access to healthcare</h2>
+                    <!-- <h3 class="pre-title">Advanced RPM Technology</h3> -->
+                    <h2 class="tm-section-title color-main">Helping you get <span class="text-span-pink">better access</span> to healthcare</h2>
                 </div>
             </div>
 
             <div class="row mt-5">
                 <div class="col-md-4 text-center p-3">
-                    <img src="assets/icons/medicaltech/005-chatbot.svg" alt="" class="tm-step-image">
+                    <img src="assets/icons/bluepack/048-sphygmomanometer.svg" alt="" class="tm-step-image">
                     <h4 class="tm-step-title color-main">Capturing & Transmitting Vitals</h4>
                     <p class="color-text-fade">Our <strong>Genius Case</strong> contains state of the art 510k devices. It also paris with our innovative <strong>Genius Hub</strong>, which allows for highly secure voice and video communication as well as 
                     transmission of the electronic data</p>
                 </div>
                 <div class="col-md-4 text-center p-3">
-                    <img src="assets/icons/medicaltech/015-laser surgery.svg" alt="" class="tm-step-image">
+                    <img src="assets/icons/bluepack//002-medical report.svg" alt="" class="tm-step-image">
                     <h4 class="tm-step-title color-main">Analyzing your Medical Data</h4>
                     <p class="color-text-fade">Our <strong>Genius Platform</strong> provides accurate and detailed information about your condition to your healthcare providers. At the same time, our <strong>advanced algorithms</strong> & <strong>artificial intelligence</strong> will help them make decisions about the necessary next steps and predictions for the future. </p>
                 </div>
                 <div class="col-md-4 text-center p-3">
-                    <img src="assets/icons/medicaltech/017-mri.svg" alt="" class="tm-step-image">
+                    <img src="assets/icons/bluepack/010-eye.svg" alt="" class="tm-step-image">
                     <h4 class="tm-step-title color-main">Efficient Decision Making</h4>
                     <p class="color-text-fade">The healthcare professional can take <strong>immediate action</strong> based on real-time data and has the ability to connect with their patient via voice and video. </p>
                 </div>
@@ -116,7 +130,7 @@
     <section class="tm-care-section p-105">
         <div class="container">
             <div class="row align-items-center justify-content-center">
-                <div class="col-md-5 ">
+                <div class="col-md-5 col-12">
                     <h2 class="tm-section-title color-main"><span class="text-span-pink">We care</span> about your health</h2>
                     <p class="color-text-fade mt-4">By using our tried and tested remote patient monitoring care process, we improve patients' health and quality of life while reducing healthcare system costs, increasing efficiency, and increasing your ROI.</p>
                     <button class="primary-button mt-4" type="submit">
@@ -126,12 +140,15 @@
                           </svg>
                     </button>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 d-md-block d-none">
                     <div class="image-wrapper">
                         <img src="https://assets.website-files.com/629247ac372abe0ddf3f9ced/62bb17f55e24169480da4903_Rectangle%201088%20(1).png" class="img-care-behind" alt="">
-                        <img src="https://assets.website-files.com/629247ac372abe0ddf3f9ced/62bb185b4b53e82a3d7e8c03_alexandr-podvalny-tE7_jvK-_YU-unsplash%201%20(1)%20(1).png" class="img-care-first" alt="">
+                        <img src="assets/img/telemed-remote-vertical.webp" class="img-care-first" alt="">
                         <img src="https://assets.website-files.com/629247ac372abe0ddf3f9ced/62a34b22118b47d455e3e019_Group%2025.svg" class="img-care-details" alt="">
                     </div>
+                </div>
+                <div class="col-12 d-md-none d-block">
+                    <img src="https://assets.website-files.com/629247ac372abe0ddf3f9ced/62bb17f55e24169480da4903_Rectangle%201088%20(1).png" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
@@ -139,7 +156,7 @@
     <!-- WE CARE SECTION END -->
 
     <!-- WE ARE BETTER SECTION START -->
-    <section class="tm-better-section p-105">
+    <section class="tm-better-section p-120">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-6 offset-md-1 order-md-2 text-left">
@@ -155,7 +172,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="col-md-5 order-md-1">
+                <div class="col-md-5 order-md-1 mt-md-0 mt-3">
                     <div class="card shadow rounded">
                         <div class="row">
                             <div class="col-12 text-center bottom-border p-3">
@@ -181,15 +198,445 @@
     </section>
     <!-- WE ARE BETTER SECTION END -->
 
+    <!-- GENIUS ECOSYSTEM START -->
+    <section class="tm-genius-ecosystem p-120">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 align-items-center">
+                    <div class="row">
+                        <div class="col-md-12" style="position: relative;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#0067AD" class="bi bi-arrow-left-circle-fill previous-button" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                              </svg>
+                            <div class="scene">
+                                <div class="carousel">
+                                  <div class="carousel__cell d-flex align-items-center">
+                                    <img src="assets/devices/apps.webp" alt="" class="carouse-image">
+                                  </div>
+                                  <div class="carousel__cell d-flex align-items-center">
+                                    <img src="assets/devices/device-case.webp" alt="" class="carouse-image">
+                                  </div>
+                                  <div class="carousel__cell d-flex align-items-center">
+                                    <img src="assets/devices/portal.webp" alt="" class="carouse-image">
+                                  </div>
+                                  <div class="carousel__cell d-flex align-items-center">
+                                    <img src="assets/devices/reporting.webp" alt="" class="carouse-image">
+                                  </div>
+                                </div>
+                              </div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#0067AD" class="bi bi-arrow-right-circle-fill next-button" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                              </svg>                              
+                              <div class="carousel-options">
+                                <p class="d-none">
+                                  <label>
+                                    Cells
+                                    <input hidden class="cells-range" type="range" min="3" max="15" value="4" />
+                                  </label>
+                                </p>
+                                <p>
+                                  
+                                </p>
+                                <p class="d-none">
+                                  Orientation:
+                                  <label>
+                                    <input hidden type="radio" name="orientation" value="horizontal" checked />
+                                    horizontal
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="orientation" value="vertical" />
+                                    vertical
+                                  </label>
+                                </p>
+                              </div>
+                        </div>
+                    </div>
+                    <h2 class="tm-section-title color-main">Devices, Software <br class="d-md-block d-none">& Know-How</h2>
+                    <p class="color-fade">Our unique ecosystem allows us to offer advanced, 360º telemedicine solutions while also keeping our services user-friendly and highly secure.</p>
+                </div>
+                <div class="col-md-6 offset-md-1 mt-md-0 mt-3 align-items-center">
+                    <div class="row">
+                        <!-- first row of 2 elements -->
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="tm-ecosystem-card p-4">
+                                        <h4 class="tm-step-title text-white">Devices Case</h4>
+                                        <p class="text-white">
+                                            Includes FDA & CE approved vital signs peripherals and our innovative Genius Hub , a proprietary IoT communication device that allows for data streaming, 
+                                            cloud sync, voice communication, and video communication.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <div class="tm-ecosystem-card p-4">
+                                        <h4 class="tm-step-title text-white">Genius Portal</h4>
+                                        <p class="text-white">
+                                            A software platform for remote control and analysis of patient data collected by our Genius Set and Genius Apps. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- second row of 2 elements -->
+                         <div class="col-md-6 tm-second-eco-row">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="tm-ecosystem-card p-4">
+                                        <h4 class="tm-step-title text-white">Apps Ecosystem</h4>
+                                        <p class="text-white">
+                                            A set of mobile apps designed for all levels of users: patients, doctors, family members, caregivers, and more.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <div class="tm-ecosystem-card p-4">
+                                        <h4 class="tm-step-title text-white">Genius Telemedicine</h4>
+                                        <p class="text-white">
+                                            A comprehensive telemedicine platform, integrated with the Genius Apps and the Genius SW platform, which allows for secure virtual doctor consultations anytime.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GENIUS ECOSYSTEM END -->
+
+    <!-- FAQ SECTION START -->
+    <section class="tm-faq-section p-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5" style="position: relative;">
+                    <img class="rounded img-fluid" src="https://assets.website-files.com/629247ac372abe0ddf3f9ced/62bbe85933f884ddc0c50c81_johny-georgiadis-3ewkNkfJj2k-unsplash%205%20(1).png" alt="">
+                    <img src="https://assets.website-files.com/629247ac372abe0ddf3f9ced/62a34b22118b47d455e3e019_Group%2025.svg" class="img-care-details" alt="">
+                </div>
+                <div class="col-md-6 offset-md-1 mt-md-0 mt-3">
+                    <h2 class="tm-section-title color-main">Health services <span class="text-span-pink">for you</span></h2>
+                    <p class="text-fade">Your health is the most important thing that you have. Without it, you cannot live a happy and fulfilled life.</p>
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              Accordion Item #1
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion mt-3" id="accordionExample2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+                              <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion mt-3" id="accordionExample3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading3">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Accordion Item #3
+                              </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample3">
+                              <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ SECTION END -->
+
+    <!-- TEST SECTION START -->
+    <section class="tm-test-section p-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="pre-title mb-0">TESTIMONIALS</h3>
+                </div>
+                <div class="col-md-12 d-flex justify-content-between align-items-center" style="padding-right: 10px;">
+                    <h2 class="tm-section-title color-main">What our patients are saying</h2>
+                    <div class="d-md-block d-none d-flex justify-content-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#0067AD" class="bi bi-arrow-left-circle-fill mx-2 prevTest" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#0067AD" class="bi bi-arrow-right-circle-fill mx-2 nextTest" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 slick-container">
+                    <div>
+                        <div class="tm-test-card p-4">
+                            <h5 class="tm-test-card-title">Best technology out there</h5>
+                            <p class="text-fade">
+                                Now I know exactly what is going on with me and my health. The real time notifications always come in handy and help me identify health problems earlier than usual.
+                            </p>
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img src="assets/test/test1.jpg" class="tm-test-card-image" alt="">
+                                <div class="ms-3 align-items-center">
+                                    <h6 class="mb-0 fw-600">Alexander P.</h6>
+                                    <p class="text-fade mb-0">Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tm-test-card p-4">
+                            <h5 class="tm-test-card-title">Great assistance</h5>
+                            <p class="text-fade">
+                                Whenever I have a question related to my health data or about the devices there is always someone that picks up the phone and guides me through my healt report.
+                            </p>
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img src="assets/test/test2.jpg" class="tm-test-card-image" alt="">
+                                <div class="ms-3 align-items-center">
+                                    <h6 class="mb-0 fw-600">William J.K</h6>
+                                    <p class="text-fade mb-0">Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tm-test-card p-4">
+                            <h5 class="tm-test-card-title">Easy to use</h5>
+                            <p class="text-fade">
+                                My son always knows everything there is to know about my health parameters and is ready to help me before the first symptoms even start to manifest. I recommended TeleMedCare to 3 of my friends.
+                            </p>
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img src="assets/test/test2.jpg" class="tm-test-card-image" alt="">
+                                <div class="ms-3 align-items-center">
+                                    <h6 class="mb-0 fw-600">Greta B.</h6>
+                                    <p class="text-fade mb-0">Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tm-test-card p-4">
+                            <h5 class="tm-test-card-title">Best technology out there</h5>
+                            <p class="text-fade">
+                                Now I know exactly what is going on with me and my health. The real time notifications always come in handy and help me identify health problems earlier than usual.
+                            </p>
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img src="assets/test/test1.jpg" class="tm-test-card-image" alt="">
+                                <div class="ms-3 align-items-center">
+                                    <h6 class="mb-0 fw-600">Alexander P.</h6>
+                                    <p class="text-fade mb-0">Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TEST SECTION  -->
+
+    <section class="tm-footer-section">
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5">
+                <div class="col mb-3">
+                  <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <img src="assets/img/logo-telemed.png" alt="" width="220px">
+                  </a>
+                  <p class="text-white">It’s time to find freedom from pain so you can start living again.</p>
+                </div>
+            
+                <div class="col mb-3">
+            
+                </div>
+            
+                <div class="col mb-3">
+                  <h5>Company</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+            
+                <div class="col mb-3">
+                  <h5>Services</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+            
+                <div class="col mb-3">
+                  <h5>Information</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-12 text-center mt-5">
+                    © TeleMedCare. All rights reserved 2023.<br>
+                    Created with ❤️ by <a href="https://grandsoft.ro/">GrandSoft</a>
+                </div>
+              </footer>
+        </div>
+    </section>
+    
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+    <!-- slick carousel logic -->
+    <script>
+        $('.slick-container').slick({
+            dots: false,
+            infinite: false,
+            arrows: true,
+            prevArrow: $('.prevTest'),
+            nextArrow: $('.nextTest'),
+            speed: 300,
+            spaceBetween: 20,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1.1,
+                    slidesToScroll: 1
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+            ]
+        });
+    </script>
+    <!-- slick end -->
+
+    <!-- 3d images functions -->
+    <script>
+
+        var carousel = document.querySelector('.carousel');
+        var cells = carousel.querySelectorAll('.carousel__cell');
+        var cellCount = 4; // cellCount set from cells-range input value
+        var selectedIndex = 0;
+        var cellWidth = carousel.offsetWidth;
+        var cellHeight = carousel.offsetHeight;
+        var isHorizontal = true;
+        var rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
+        var radius, theta;
+        // console.log( cellWidth, cellHeight );
+
+        function rotateCarousel() {
+        var angle = theta * selectedIndex * -1;
+        carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
+            rotateFn + '(' + angle + 'deg)';
+        }
+
+        var prevButton = document.querySelector('.previous-button');
+        prevButton.addEventListener( 'click', function() {
+        selectedIndex--;
+        rotateCarousel();
+        });
+
+        var nextButton = document.querySelector('.next-button');
+        nextButton.addEventListener( 'click', function() {
+        selectedIndex++;
+        rotateCarousel();
+        });
+
+        var cellsRange = document.querySelector('.cells-range');
+        cellsRange.addEventListener( 'change', changeCarousel );
+        cellsRange.addEventListener( 'input', changeCarousel );
+
+
+
+        function changeCarousel() {
+        cellCount = cellsRange.value;
+        theta = 360 / cellCount;
+        var cellSize = isHorizontal ? cellWidth : cellHeight;
+        radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount ) );
+        for ( var i=0; i < cells.length; i++ ) {
+            var cell = cells[i];
+            if ( i < cellCount ) {
+            // visible cell
+            cell.style.opacity = 1;
+            var cellAngle = theta * i;
+            cell.style.transform = rotateFn + '(' + cellAngle + 'deg) translateZ(' + radius + 'px)';
+            } else {
+            // hidden cell
+            cell.style.opacity = 0;
+            cell.style.transform = 'none';
+            }
+        }
+
+        rotateCarousel();
+        }
+
+        var orientationRadios = document.querySelectorAll('input[name="orientation"]');
+        ( function() {
+        for ( var i=0; i < orientationRadios.length; i++ ) {
+            var radio = orientationRadios[i];
+            radio.addEventListener( 'change', onOrientationChange );
+        }
+        })();
+
+        function onOrientationChange() {
+        var checkedRadio = document.querySelector('input[name="orientation"]:checked');
+        isHorizontal = checkedRadio.value == 'horizontal';
+        rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
+        changeCarousel();
+        }
+
+        // set initials
+        onOrientationChange();
+
+    </script>
   </body>
 </html>
